@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from './components/header/Header';
 import Home from './components/home/Home';
@@ -8,7 +8,7 @@ import WorkExperience from './components/workexperience/WorkExperience';
 
 const App = () => {
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/portfolio/'}>
+    <HashRouter>
     <div>
       <Header />
       <main className='main'>
@@ -19,7 +19,7 @@ const App = () => {
         </Routes>
       </main>
     </div>
-    </BrowserRouter>
+    </HashRouter>
     
   )
 }
