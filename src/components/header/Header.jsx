@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {Link} from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
@@ -10,21 +11,21 @@ const Header = () => {
                 <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
                     <ul className="nav__list grid">
                         <li className="nav__item">
-                            <a href="/" className="nav__link active-link">
+                            <Link to="/" className="nav__link active-link">
                                 <i className="uil uil-estate nav__icon"></i> Home
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="nav__item">
-                            <a href="portfolio" className="nav__link">
+                            <Link to="/portfolio" className="nav__link">
                                 <i className="uil uil-scenery nav__icon"></i> Portfolio
-                            </a>
+                            </Link>
                         </li>
 
                         <li className="nav__item">
-                            <a href="workexperience" className="nav__link">
+                            <Link to="/workexperience" className = "nav__link">
                                 <i className="uil uil-briefcase nav__icon"></i> Work Experience
-                            </a>
+                            </Link>
                         </li>
 
                         {/* <li className="nav__item">
