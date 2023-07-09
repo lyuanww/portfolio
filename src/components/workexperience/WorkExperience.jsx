@@ -33,7 +33,7 @@ const WorkExperience = () => {
         style={{ minHeight: '410px' }} // Adjust the minHeight to make the connector longer
       />
     </TimelineSeparator>
-    <TimelineContent>9 Jul 2023 to Present</TimelineContent>
+    <TimelineContent>May 2023 to Present</TimelineContent>
   </TimelineItem>
 </Timeline>
         <Card sx={{ maxWidth: 650,maxHeight: 440}}>
