@@ -8,7 +8,7 @@ import WorkExperience from './components/workexperience/WorkExperience';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.DEV ? '/' : '/portfolio/'}>
     <div>
       <Header />
       <main className='main'>
