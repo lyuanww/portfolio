@@ -9,7 +9,7 @@ const Data = () => {
         </h1>
         <h3 className="home__subtitle">Software Dev</h3>
         <p className="home__description">Hello! I'm Li Yuan and I'm a girl in Computer Science!</p>
-        <a href="#contact" className="button button--flex">Say Hello 
+        {/* <a href="#contact" className="button button--flex">Say Hello 
             <svg
                   class="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@ const Data = () => {
                     fill="var(--container-color)"
                   ></path>
             </svg>
-        </a>
+        </a> */}
     </div>
   )
 } 
