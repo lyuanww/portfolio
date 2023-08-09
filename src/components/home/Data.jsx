@@ -8,7 +8,7 @@ const Data = () => {
             <img src={HandLogo} alt="Hand Logo" />
         </h1>
         <h3 className="home__subtitle">Software Dev</h3>
-        <p className="home__description">Hello! I'm Li Yuan and I'm a girl in Computer Science!</p>
+        <p className="home__description">Hello! I'm Li Yuan and I'm a student studying Computer Science in National University of Singapore!</p>
         {/* <a href="#contact" className="button button--flex">Say Hello 
             <svg
                   class="button__icon"
