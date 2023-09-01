@@ -89,25 +89,25 @@ const Portfolio = () => {
         <SwiperSlide><CardMedia
         component="img"
         alt="green iguana"
-        sx={{ maxWidth: 650, maxHeight: 280 }}
+        sx={{ maxWidth: 650, maxHeight: 380 }}
         src={refashion1}
       /></SwiperSlide>
       <SwiperSlide><CardMedia
         component="img"
         alt="green iguana"
-        sx={{ maxWidth: 650, maxHeight: 280 }}
+        sx={{ maxWidth: 650, maxHeight: 380 }}
         src={refashion2}
       /></SwiperSlide>
       <SwiperSlide><CardMedia
         component="img"
         alt="green iguana"
-        sx={{ maxWidth: 650, maxHeight: 320 }}
+        sx={{ maxWidth: 650, maxHeight: 380 }}
         src={refashion3}
       /></SwiperSlide>
       <SwiperSlide><CardMedia
         component="img"
         alt="green iguana"
-        sx={{ maxWidth: 650, maxHeight: 320 }}
+        sx={{ maxWidth: 650, maxHeight: 380 }}
         src={refashion4}
       /></SwiperSlide>
       </Swiper>
