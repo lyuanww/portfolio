@@ -10,6 +10,10 @@ import forum1 from "../../assets/forum1.png";
 import forum2 from "../../assets/forum2.png";
 import forum3 from "../../assets/forum3.png";
 import forum4 from "../../assets/forum4.png";
+import refashion1 from "../../assets/refashion1.png";
+import refashion2 from "../../assets/refashion2.png";
+import refashion3 from "../../assets/refashion3.png";
+import refashion4 from "../../assets/refashion4.png";
 import { Avatar } from '@mui/material';
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -77,6 +81,50 @@ const Portfolio = () => {
       <CardActions>
         <Button size="small" href="https://postit123.netlify.app/">Link</Button>
         <Button size="small" href="https://github.com/post-it-fo-rum">Github</Button>
+      </CardActions>
+      
+    </Card>
+    <Card sx={{ maxWidth: 650}}>
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide><CardMedia
+        component="img"
+        alt="green iguana"
+        sx={{ maxWidth: 650, maxHeight: 280 }}
+        src={refashion1}
+      /></SwiperSlide>
+      <SwiperSlide><CardMedia
+        component="img"
+        alt="green iguana"
+        sx={{ maxWidth: 650, maxHeight: 280 }}
+        src={refashion2}
+      /></SwiperSlide>
+      <SwiperSlide><CardMedia
+        component="img"
+        alt="green iguana"
+        sx={{ maxWidth: 650, maxHeight: 320 }}
+        src={refashion3}
+      /></SwiperSlide>
+      <SwiperSlide><CardMedia
+        component="img"
+        alt="green iguana"
+        sx={{ maxWidth: 650, maxHeight: 320 }}
+        src={refashion4}
+      /></SwiperSlide>
+      </Swiper>
+      
+      <CardContent sx={{display:'flex', flexDirection: 'column',rowGap: '0.5rem'}}>
+        <Typography gutterBottom variant="h5" component="div">
+          Refashion
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        A clothing rental website using the MERN stack, creating a sustainable way of loving fashion
+        </Typography>
+        <div className='techstack'>
+            </div>
+      </CardContent>
+      <CardActions>
+        <Button size="small" href="https://youtu.be/Mht6UlSQ7Zk">Demo</Button>
+        <Button size="small" href="https://github.com/sindhurajain/refashion">Github</Button>
       </CardActions>
       
     </Card>
