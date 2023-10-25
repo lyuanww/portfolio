@@ -79,7 +79,6 @@ const Portfolio = () => {
             </div>
       </CardContent>
       <CardActions>
-        <Button size="small" href="https://postit123.netlify.app/">Link</Button>
         <Button size="small" href="https://github.com/post-it-fo-rum">Github</Button>
       </CardActions>
       
