@@ -14,6 +14,9 @@ import refashion1 from "../../assets/refashion1.png";
 import refashion2 from "../../assets/refashion2.png";
 import refashion3 from "../../assets/refashion3.png";
 import refashion4 from "../../assets/refashion4.png";
+import tic1 from "../../assets/Tic1.png";
+import tic2 from "../../assets/Tic2.png";
+import tic3 from "../../assets/Tic3.png";
 import { Avatar } from '@mui/material';
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -24,12 +27,15 @@ import { Navigation } from "swiper";
 
 const Portfolio = () => {
   return (
+
+
     <section className="portfolio section">
         <h2 className="section__title">Portfolio</h2>
         <div className='portfolio__content'>
         
         <div className="portfolio__container"> 
       
+      {/* Post It */}
         <Card sx={{ maxWidth: 650}}>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide><CardMedia
@@ -83,6 +89,8 @@ const Portfolio = () => {
       </CardActions>
       
     </Card>
+
+    {/* Refashion */}
     <Card sx={{ maxWidth: 650}}>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide><CardMedia
@@ -127,7 +135,52 @@ const Portfolio = () => {
       </CardActions>
       
     </Card>
-    
+
+    {/* Tic-Tac-Twist */}
+    <Card sx={{ maxWidth: 650}}>
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide><CardMedia
+        component="img"
+        alt="green iguana"
+
+        src={tic2}
+      /></SwiperSlide>
+      <SwiperSlide><CardMedia
+        component="img"
+        alt="green iguana"
+      
+        src={tic1}
+      /></SwiperSlide>
+      <SwiperSlide><CardMedia
+        component="img"
+        alt="green iguana"
+
+        src={tic3}
+      /></SwiperSlide>
+      </Swiper>
+      
+      <CardContent sx={{display:'flex', flexDirection: 'column',rowGap: '0.5rem'}}>
+        <Typography gutterBottom variant="h5" component="div">
+          Tic Tac Twist
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        Tic Tac Twist gives a twist to our classic Tic-Tac-Toe. It has three modes:
+
+        PvP: Player vs Player
+        PvC: Player vs Smart AI
+        PvC: Player vs Not So Smart AI
+
+        This project is written in Python3 with the Pygame library. 
+        </Typography>
+        <div className='techstack'>
+          </div>
+      </CardContent>
+      <CardActions>
+        
+        <Button size="small" href="https://github.com/lyuanww/tic-tac-twist">Github</Button>
+      </CardActions>
+      
+    </Card>
   
   
     
