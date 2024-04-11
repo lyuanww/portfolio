@@ -7,6 +7,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import "../portfolio/portfolio.css";
 import cvwopic from "../../assets/cvwo.jpeg";
+import jobwizpic from "../../assets/jobwiz.png";
+import gdscpic from "../../assets/gdsc.png";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -20,6 +22,86 @@ const WorkExperience = () => {
       <h2 className="section__title">Work Experience</h2>
       <div className="portfolio__content">
         <div className="portfolio__container">
+        <div className="portfolio__timeline">
+            <Timeline position="left">
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector
+                    style={{ minHeight: "380px" }} // Adjust the minHeight to make the connector longer
+                  />
+                </TimelineSeparator>
+                <TimelineContent>Jan 2024 to April 2024</TimelineContent>
+              </TimelineItem>
+            </Timeline>
+            <Card sx={{ maxWidth: 650, maxHeight: 420 }}>
+            <CardMedia
+                component="img"
+                alt="green iguana"
+                sx={{ maxWidth: 650, maxHeight: 220 }}
+                src={jobwizpic}
+              />
+              <CardContent
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  rowGap: "0.5rem",
+                }}
+              >
+                <Typography gutterBottom variant="h5" component="div">
+                  Full-Stack Software Engineer Intern
+                </Typography>
+                <Typography gutterBottom variant="h6" component="div">
+                  JobWiz
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                 Developed new features with Vue.js for the frontend and Golang for the backend hosted on Google Cloud Platform. I also helped to diagnose and resolve technical issues, maintaining seamless functioning of the product hosting over 1000 job listings and improving the end user experience.
+                </Typography>
+              </CardContent>
+  
+            </Card>
+          </div>
+        <div className="portfolio__timeline">
+            <Timeline position="left">
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector
+                    style={{ minHeight: "280px" }} // Adjust the minHeight to make the connector longer
+                  />
+                </TimelineSeparator>
+                <TimelineContent>Sep 2023 to Present</TimelineContent>
+              </TimelineItem>
+            </Timeline>
+            <Card sx={{ maxWidth: 650, maxHeight: 350 }}>
+            <CardMedia
+                component="img"
+                alt="green iguana"
+                sx={{ maxWidth: 650, maxHeight: 160 }}
+                src={gdscpic}
+              />
+              <CardContent
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  rowGap: "0.5rem",
+                }}
+              >
+                <Typography gutterBottom variant="h5" component="div">
+                  Full-Stack Software Engineer
+                </Typography>
+                <Typography gutterBottom variant="h6" component="div">
+                  Google Developers Student Club
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  Developing a Nest.js backend for a Volunteering Management
+                  System(VMS) for a Non-Profit Organisation, automating the
+                  manual volunteer registration system and optimizing daily
+                  workflow.
+                </Typography>
+              </CardContent>
+            </Card>
+          </div>
           <div className="portfolio__timeline">
             <Timeline position="left">
               <TimelineItem>
@@ -67,52 +149,9 @@ const WorkExperience = () => {
                   Learn More
                 </Button>
               </CardActions>
-
             </Card>
-
-            
           </div>
-          <div className="portfolio__timeline">
-              
-          <Timeline position="left">
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot />
-                  <TimelineConnector
-                    style={{ minHeight: "210px" }} // Adjust the minHeight to make the connector longer
-                  />
-                </TimelineSeparator>
-                <TimelineContent>Sep 2023 to Present</TimelineContent>
-              </TimelineItem>
-            </Timeline>
-            <Card sx={{ maxWidth: 650, maxHeight: 240 }}>
-              <CardContent
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  rowGap: "0.5rem",
-                }}
-              >
-                <Typography gutterBottom variant="h5" component="div">
-                  Backend Software Engineer
-                </Typography>
-                <Typography gutterBottom variant="h6" component="div">
-                  Google Developers Student Club
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Developing a Nest.js backend for a Volunteering Management
-                  System(VMS) for a Non-Profit Organisation, automating the
-                  manual volunteer registration system and optimizing daily
-                  workflow.
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small" href="https://www.comp.nus.edu.sg/~vwo/">
-                  Learn More
-                </Button>
-              </CardActions>
-              </Card>
-            </div>
+          
         </div>
       </div>
     </section>
